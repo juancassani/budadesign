@@ -1,0 +1,225 @@
+* {
+    font-family: Quicksand, Tahoma, verdana, sans-serif;
+}
+
+header {
+    position: relative;
+}
+body {
+    background-image: url(images/diarioaest.jpg);
+    background-repeat: space;
+}
+main #video {
+    padding: 40px;
+    margin: 20px;
+    background-color: black;
+}
+
+.grillaproductos {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    grid-template-areas: "header header header"
+                         "video video video"
+                         "producto1 producto2 producto2"
+                         "producto4 producto4 producto4";
+                        
+    gap: 20px;
+}
+
+.grillaproductos2 {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    grid-template-areas: "header header header"
+                         "video video video"
+                         "producto1 producto2 producto3"
+                         "producto4 producto4 producto4";
+                        
+    gap: 20px;
+}
+
+header {
+    grid-area: header;
+}
+.video {
+    display: flex;
+    grid-area: video;
+    justify-self: center;
+    align-self: center;
+}
+
+.producto1 {
+    grid-area: producto1 ;
+}
+
+.producto2 {
+    grid-area: producto2;
+}
+
+.producto3 {
+    grid-area: producto3;
+}
+
+.producto4 {
+    grid-area: producto4;
+}
+
+
+.titulo {
+    background-color: rgba(19, 18, 18, 0.856);
+    color: antiquewhite;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    size: 50px;
+}
+div {
+    background-color: rgba(19, 18, 18);
+    color: antiquewhite;
+    padding: 8px;
+    
+}
+
+.header__navegacion {
+    display: flex;
+    background-color: rgba(19, 18, 18, 0.856);
+    margin: 10px;
+    padding: 20px;
+    font-size: large;
+
+}
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 15px;
+    padding: 15px;
+}
+
+.producto__ventana {
+    padding: 40px;
+    background-color: black;
+    margin-top: 10px;
+    width: 600px;
+    color: antiquewhite;
+    border-radius: 5px;
+
+}
+
+.posterimage {
+    width: 400px;
+    
+}
+
+img .imagenproducto{
+    width: 150px;
+    height: 250px;
+}
+
+.gridcontainer {
+    display: grid;
+    border: 5px turquoise;
+    grid-template-columns: 30%;
+    grid-template-rows: 3;
+    grid-template-areas: "uno uno tres"
+                         "dos dos tres"
+                         "cuatro cuatro cinco"
+                         "seis seis cinco";
+
+}
+
+.gridItem {
+    display: grid;
+    border: 12px rgba(19, 18, 18, 0.349);
+    grid-template-rows: 150px 150px 150px 150px; 
+
+
+}
+
+footer {
+    display: flex;
+    background-color: rgb(19, 18, 18);
+    margin-top: 10px;
+    padding: 20px;
+    font-size: large;
+    color: antiquewhite;
+
+}
+form {
+    background-color: whitesmoke;
+    display: block;
+}
+
+.inputbox {
+    background-color: aliceblue;
+    padding: 40px;
+    border: 5px black;
+}
+
+.redletter {
+    color: red;
+}
+
+@media  (max-width:900px){
+    .grillaproductos  {
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-template-areas: "header "
+                             "video "
+                             "producto1"
+                             "producto2"
+                             "producto3"
+                             "producto4";
+                            
+        gap: 20px;
+    }
+}
+
+@media (min-width: 900px) and (max-width:1400px) {
+    .grillaproductos  {
+        display: grid;
+        /* grid-template-columns: 1fr, 1fr; */
+        grid-template-areas: "header header"
+                             "video video"
+                             "producto1 producto2"
+                             "producto3 producto4"
+                             
+                            ;   
+        gap: 20px;
+    }
+
+}
+
+@media  (max-width:900px){
+    .grillaproductos2  {
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-template-areas: "header "
+                             "video "
+                             "producto1"
+                             "producto2"
+                             "producto3"
+                             "producto4";
+                            
+        gap: 20px;
+    }
+}
+
+@media (min-width: 900px) and (max-width:1400px) {
+    .grillaproductos2  {
+        display: grid;
+        /* grid-template-columns: 1fr, 1fr; */
+        grid-template-areas: "header header"
+                             "video video"
+                             "producto1 producto2"
+                             "producto3 producto4"
+                             
+                            ;   
+        gap: 20px;
+    }
+
+}
