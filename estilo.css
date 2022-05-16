@@ -14,8 +14,7 @@ main #video {
     margin: 20px;
     background-color: black;
 }
-
-.grillaproductos {
+/* .grillaproductos {
     display: grid;
     grid-template-columns: repeat(3, fr);
     grid-template-areas: "header header header"
@@ -24,10 +23,10 @@ main #video {
                          "producto4 producto4 producto4";
                         
     gap: 20px;
-}
+} */
 
 
-
+/*     no se usa porq usamos bootstrap ( es flex)
 .grillaproductos2 {
     display: grid;
     grid-template-columns: repeat(3, fr);
@@ -37,7 +36,7 @@ main #video {
                          "producto4 producto4 producto4";
                         
     gap: 20px;
-}
+} */
 
 header {
     grid-area: header;
@@ -71,6 +70,7 @@ header {
     color: antiquewhite;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 h1 {
@@ -83,12 +83,6 @@ li a:hover {
 }
 
 
-div {
-    background-color: rgba(19, 18, 18);
-    color: antiquewhite;
-    padding: 8px;
-    
-}
 
 .header__navegacion {
     display: flex;
@@ -96,6 +90,7 @@ div {
     margin: 10px;
     padding: 20px;
     font-size: large;
+    justify-content: center;
 
 }
 ul {
@@ -109,8 +104,27 @@ li a {
     padding: 15px;
 }
 
+button:hover {
+    color: white;
+    background-color: black;
+    
+}
+
+button:active {
+    background-color: blue;
+    color: aquamarine;
+}
 .producto__ventana {
-    padding: 40px;
+    background-color: black;
+    margin-top: 10px;
+    width: 600px;
+    color: antiquewhite;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+.producto__ventana2 {
     background-color: black;
     margin-top: 10px;
     width: 600px;
@@ -122,10 +136,15 @@ li a {
 .imgBox { /* now a container for the image */
     display: inline-block; /* shrink wrap to image */
     overflow: hidden; /* hide the excess */
+    width: 600px;
+    height: 900px;
   }
 .imgBox img {
     display: block; /* no whitespace */
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
+    width: 500px;
+    height: 750px;
+    
   }
 .imgBox:hover img {
     transform: scale(1.3);
