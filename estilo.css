@@ -41,6 +41,7 @@ main #video {
 header {
     grid-area: header;
 }
+
 .video {
     display: flex;
     grid-area: video;
