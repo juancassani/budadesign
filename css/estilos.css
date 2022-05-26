@@ -1,0 +1,178 @@
+* {
+  font-family: Quicksand, Tahoma, verdana, sans-serif; }
+
+header {
+  position: relative;
+  grid-area: header; }
+
+body {
+  background-image: url(../images/diarioaest.jpg);
+  background-repeat: space; }
+
+main {
+  margin-right: 5%;
+  margin-left: 5%; }
+
+header {
+  grid-area: header; }
+
+li a {
+  text-decoration: none;
+  color: antiquewhite;
+  margin: 15px;
+  padding: 15px; }
+
+li a:hover {
+  background-color: antiquewhite;
+  color: black; }
+
+.titulo {
+  background-color: rgba(19, 18, 18, 0.856);
+  color: antiquewhite;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; }
+
+h1 {
+  size: 50px; }
+
+.header__navegacion {
+  display: flex;
+  background-color: rgba(19, 18, 18, 0.856);
+  margin: 0px;
+  padding: 20px;
+  font-size: large;
+  justify-content: center; }
+
+ul {
+  list-style-type: none; }
+
+div {
+  align-items: center; }
+  div.tituloseccion {
+    margin-top: 40px; }
+
+button button:hover {
+  color: white;
+  background-color: black; }
+
+button button:active {
+  background-color: blue;
+  color: aquamarine; }
+
+.tituloseccion {
+  background-color: #131212;
+  color: antiquewhite;
+  text-align: center; }
+
+.producto__ventana {
+  background-color: #131212;
+  margin-top: 10px;
+  width: 600px;
+  color: antiquewhite;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.producto__ventana2 {
+  background-color: #131212;
+  margin-top: 10px;
+  width: 600px;
+  color: antiquewhite;
+  border-radius: 5px; }
+
+.imgBox {
+  /* now a container for the image */
+  display: inline-block;
+  /* shrink wrap to image */
+  overflow: hidden;
+  /* hide the excess */
+  width: max-content;
+  height: fit-content; }
+  .imgBox img {
+    display: block;
+    /* no whitespace */
+    transition: .5s ease-in-out;
+    width: 500px;
+    height: 750px; }
+  .imgBox:hover img {
+    transform: scale(1.2); }
+
+.imgBox img {
+  display: block;
+  /* no whitespace */
+  transition: .5s ease-in-out;
+  width: 500px;
+  height: 750px; }
+
+.imgBox:hover img {
+  transform: scale(1.2); }
+
+.posterimage {
+  width: 400px; }
+
+img .imagenproducto {
+  width: 150px;
+  height: 250px; }
+
+.gridcontainer {
+  display: grid;
+  border: 5px turquoise;
+  grid-template-columns: 30%;
+  grid-template-rows: 3;
+  grid-template-areas: "uno uno tres" "dos dos tres" "cuatro cuatro cinco" "seis seis cinco"; }
+
+.gridItem {
+  display: grid;
+  border: 12px rgba(19, 18, 18, 0.349);
+  grid-template-rows: 150px 150px 150px 150px; }
+
+footer {
+  display: flex;
+  background-color: #131212;
+  background-color: #131212;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: large;
+  color: antiquewhite; }
+
+form {
+  background-color: whitesmoke;
+  display: block; }
+
+.inputbox {
+  background-color: aliceblue;
+  padding: 40px;
+  border: 5px black; }
+
+.redletter {
+  color: red; }
+
+@media (max-width: 900px) {
+  .grillaproductos {
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    grid-template-areas: "header " "video " "producto1" "producto2" "producto3" "producto4";
+    gap: 20px; } }
+
+@media (min-width: 900px) and (max-width: 1400px) {
+  .grillaproductos {
+    display: grid;
+    /* grid-template-columns: 1fr, 1fr; */
+    grid-template-areas: "header header" "video video" "producto1 producto2" "producto3 producto4";
+    gap: 20px; } }
+
+@media (max-width: 900px) {
+  .grillaproductos2 {
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    grid-template-areas: "header " "video " "producto1" "producto2" "producto3" "producto4";
+    gap: 20px; } }
+
+@media (min-width: 900px) and (max-width: 1400px) {
+  .grillaproductos2 {
+    display: grid;
+    /* grid-template-columns: 1fr, 1fr; */
+    grid-template-areas: "header header" "video video" "producto1 producto2" "producto3 producto4";
+    gap: 20px; } }
