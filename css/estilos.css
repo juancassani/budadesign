@@ -33,7 +33,7 @@ li a:hover {
   padding-bottom: 10px;
   text-align: center; }
 
-h1 {
+h2 {
   size: 50px; }
 
 .header__navegacion {
@@ -68,19 +68,20 @@ button button:active {
 .producto__ventana {
   background-color: #131212;
   margin-top: 10px;
-  width: 600px;
+  width: fit-content;
+  height: fit-content;
   color: antiquewhite;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  border-radius: 5px; }
 
 .producto__ventana2 {
   background-color: #131212;
   margin-top: 10px;
-  width: 600px;
+  width: 500px;
   color: antiquewhite;
   border-radius: 5px; }
+
+.productdescription {
+  text-align: bottom; }
 
 .imgBox {
   /* now a container for the image */
@@ -89,7 +90,9 @@ button button:active {
   overflow: hidden;
   /* hide the excess */
   width: max-content;
-  height: fit-content; }
+  height: fit-content;
+  align-items: center;
+  justify-content: center; }
   .imgBox img {
     display: block;
     /* no whitespace */
@@ -111,10 +114,6 @@ button button:active {
 
 .posterimage {
   width: 400px; }
-
-img .imagenproducto {
-  width: 150px;
-  height: 250px; }
 
 .gridcontainer {
   display: grid;
