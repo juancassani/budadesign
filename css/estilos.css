@@ -1,20 +1,21 @@
 * {
-  font-family: Quicksand, Tahoma, verdana, sans-serif; }
+  font-family: Tahoma, verdana, sans-serif;
+  padding: 0px;
+  margin: 0; }
 
 header {
-  position: relative;
-  grid-area: header; }
+  position: relative; }
 
 body {
   background-image: url(../images/diarioaest.jpg);
   background-repeat: space; }
 
 main {
-  margin-right: 5%;
-  margin-left: 5%; }
-
-header {
-  grid-area: header; }
+  padding-right: 5vw;
+  padding-left: 5vw;
+  align-items: center;
+  width: auto;
+  height: auto; }
 
 li a {
   text-decoration: none;
@@ -34,13 +35,13 @@ li a:hover {
   text-align: center; }
 
 h2 {
-  size: 50px; }
+  size: 15rem; }
 
 .header__navegacion {
   display: flex;
   background-color: rgba(19, 18, 18, 0.856);
   margin: 0px;
-  padding: 20px;
+  padding: 15px;
   font-size: large;
   justify-content: center; }
 
@@ -68,8 +69,8 @@ button button:active {
 .producto__ventana {
   background-color: #131212;
   margin-top: 10px;
-  width: fit-content;
-  height: fit-content;
+  width: auto;
+  height: auto;
   color: antiquewhite;
   border-radius: 5px; }
 
@@ -79,9 +80,6 @@ button button:active {
   width: 500px;
   color: antiquewhite;
   border-radius: 5px; }
-
-.productdescription {
-  text-align: bottom; }
 
 .imgBox {
   /* now a container for the image */
@@ -96,9 +94,7 @@ button button:active {
   .imgBox img {
     display: block;
     /* no whitespace */
-    transition: .5s ease-in-out;
-    width: 500px;
-    height: 750px; }
+    transition: .5s ease-in-out; }
   .imgBox:hover img {
     transform: scale(1.2); }
 
@@ -106,26 +102,11 @@ button button:active {
   display: block;
   /* no whitespace */
   transition: .5s ease-in-out;
-  width: 500px;
-  height: 750px; }
+  width: 100%;
+  height: 100%; }
 
 .imgBox:hover img {
   transform: scale(1.2); }
-
-.posterimage {
-  width: 400px; }
-
-.gridcontainer {
-  display: grid;
-  border: 5px turquoise;
-  grid-template-columns: 30%;
-  grid-template-rows: 3;
-  grid-template-areas: "uno uno tres" "dos dos tres" "cuatro cuatro cinco" "seis seis cinco"; }
-
-.gridItem {
-  display: grid;
-  border: 12px rgba(19, 18, 18, 0.349);
-  grid-template-rows: 150px 150px 150px 150px; }
 
 footer {
   display: flex;
@@ -147,31 +128,3 @@ form {
 
 .redletter {
   color: red; }
-
-@media (max-width: 900px) {
-  .grillaproductos {
-    display: grid;
-    grid-template-columns: repeat(1, fr);
-    grid-template-areas: "header " "video " "producto1" "producto2" "producto3" "producto4";
-    gap: 20px; } }
-
-@media (min-width: 900px) and (max-width: 1400px) {
-  .grillaproductos {
-    display: grid;
-    /* grid-template-columns: 1fr, 1fr; */
-    grid-template-areas: "header header" "video video" "producto1 producto2" "producto3 producto4";
-    gap: 20px; } }
-
-@media (max-width: 900px) {
-  .grillaproductos2 {
-    display: grid;
-    grid-template-columns: repeat(1, fr);
-    grid-template-areas: "header " "video " "producto1" "producto2" "producto3" "producto4";
-    gap: 20px; } }
-
-@media (min-width: 900px) and (max-width: 1400px) {
-  .grillaproductos2 {
-    display: grid;
-    /* grid-template-columns: 1fr, 1fr; */
-    grid-template-areas: "header header" "video video" "producto1 producto2" "producto3 producto4";
-    gap: 20px; } }
