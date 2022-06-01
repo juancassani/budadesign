@@ -13,6 +13,9 @@ header {
 body {
     background-image: url(../images/diarioaest.jpg);
     background-repeat: space;
+    background-size: auto auto;
+    margin: 0;
+    padding: 0;
 }
 main {
     padding-right: 5vw;
@@ -27,7 +30,7 @@ li{
     a{
         text-decoration: none;
         color: antiquewhite;
-        margin: 15px;
+        margin: 0px;
         padding: 15px;
     }
 
@@ -88,14 +91,14 @@ button {
     background-color: $darkbackgrounds;
     margin-top: 10px;
     width: auto;
-    height: auto;
+    height: 50px;
     color: antiquewhite;
     border-radius: 5px;
 }
 .producto__ventana2 {
     background-color: $darkbackgrounds;
     margin-top: 10px;
-    width: 500px;
+    width: 40rem;
     color: antiquewhite;
     border-radius: 5px;
 }
@@ -109,6 +112,8 @@ button {
     img {
         display: block; /* no whitespace */
         transition: .5s ease-in-out;
+        max-width: 500px;
+        max-height: 700px;
     }
     &:hover img{
         transform: scale(1.2);
@@ -126,7 +131,6 @@ button {
   }
 footer {
     display: flex;
-    background-color: $darkbackgrounds;
     background-color: $darkbackgrounds;
     margin-top: 10px;
     padding: 20px;

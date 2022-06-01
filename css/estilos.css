@@ -8,7 +8,10 @@ header {
 
 body {
   background-image: url(../images/diarioaest.jpg);
-  background-repeat: space; }
+  background-repeat: space;
+  background-size: auto auto;
+  margin: 0;
+  padding: 0; }
 
 main {
   padding-right: 5vw;
@@ -20,7 +23,7 @@ main {
 li a {
   text-decoration: none;
   color: antiquewhite;
-  margin: 15px;
+  margin: 0px;
   padding: 15px; }
 
 li a:hover {
@@ -70,14 +73,14 @@ button button:active {
   background-color: #131212;
   margin-top: 10px;
   width: auto;
-  height: auto;
+  height: 50px;
   color: antiquewhite;
   border-radius: 5px; }
 
 .producto__ventana2 {
   background-color: #131212;
   margin-top: 10px;
-  width: 500px;
+  width: 40rem;
   color: antiquewhite;
   border-radius: 5px; }
 
@@ -93,7 +96,9 @@ button button:active {
   .imgBox img {
     display: block;
     /* no whitespace */
-    transition: .5s ease-in-out; }
+    transition: .5s ease-in-out;
+    max-width: 500px;
+    max-height: 700px; }
   .imgBox:hover img {
     transform: scale(1.2); }
 
@@ -109,7 +114,6 @@ button button:active {
 
 footer {
   display: flex;
-  background-color: #131212;
   background-color: #131212;
   margin-top: 10px;
   padding: 20px;
