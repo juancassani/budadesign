@@ -103,7 +103,6 @@ button {
 .imgBox { /* now a container for the image */
     display: inline-block; /* shrink wrap to image */
     overflow: hidden; /* hide the excess */
-    width: max-content;
     height: fit-content;
     align-items: center;
     justify-content: center;
