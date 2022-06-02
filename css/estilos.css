@@ -131,3 +131,24 @@ form {
 
 .redletter {
   color: red; }
+
+.cajasede1 {
+  background: linear-gradient(#e5ff00, black);
+  display: block;
+  color: black;
+  padding-left: 40vw;
+  padding-right: 45vw; }
+
+.cajasede2 {
+  background: linear-gradient(cyan, black);
+  display: block;
+  color: black;
+  padding-left: 40vw;
+  padding-right: 45vw; }
+
+.cajasede3 {
+  background: linear-gradient(lime, black);
+  display: block;
+  color: black;
+  padding-left: 40vw;
+  padding-right: 45vw; }

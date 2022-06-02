@@ -153,3 +153,21 @@ form {
     color: red;
 }
 
+@mixin contenedor-copado ($color1, $color2) {
+    background: linear-gradient($color1, $color2);
+    display: block;
+    color: black;
+    padding-left: 40vw;
+    padding-right: 45vw;
+
+}
+
+.cajasede1 {
+    @include contenedor-copado(rgb(229, 255, 0), black)
+}
+.cajasede2 {
+    @include contenedor-copado(rgb(0, 255, 255), black)
+}
+.cajasede3 {
+    @include contenedor-copado(rgb(0, 255, 0), black)
+}
