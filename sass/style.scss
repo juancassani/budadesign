@@ -58,6 +58,7 @@ h2 {
     padding: 15px;
     font-size: large;
     justify-content: center;
+    color: antiquewhite;
 
 }
 ul {
@@ -69,6 +70,13 @@ div {
     &.tituloseccion{
         margin-top: 40px;
     }
+}
+
+.logonav {
+    height: 5rem;
+    width: 5rem;
+    padding: 0%;
+    margin: 0%;
 }
 
 button {
