@@ -146,6 +146,14 @@ footer {
     color: antiquewhite;
 
 }
+.carousel-inner{
+    max-height: 600px;
+}
+.carouselimage{
+    height: fit-content;
+    width: fit-content;
+}
+
 form {
     background-color: whitesmoke;
     display: block;
