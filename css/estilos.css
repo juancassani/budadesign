@@ -146,7 +146,13 @@ footer {
 .cajatextolocal {
   background-color: antiquewhite;
   margin: 10px 0 200px 0px;
-  padding: 0 40px 0 40px; }
+  padding: 0 40px 0 40px;
+  height: fit-content;
+  width: 100%; }
+
+.mapa {
+  width: fit-content;
+  height: fit-content; }
 
 form {
   background-color: black;
@@ -164,7 +170,9 @@ form {
   width: 100%; }
 
 .cajaproducto {
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  max-height: 600px;
+  align-items: stretch; }
 
 .textoproducto {
   padding: 10px; }
@@ -174,7 +182,14 @@ form {
   height: auto; }
 
 .btn-buy {
-  background-color: black; }
+  background-color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 5px; }
+
+.row {
+  align-items: stretch; }
 
 .btn-wsp {
   position: fixed;
