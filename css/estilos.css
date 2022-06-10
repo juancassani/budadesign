@@ -84,14 +84,7 @@ button button:active {
   background-color: #131212;
   margin-top: 10px;
   width: auto;
-  height: 50px;
-  color: antiquewhite;
-  border-radius: 5px; }
-
-.producto__ventana2 {
-  background-color: #131212;
-  margin-top: 10px;
-  width: 40rem;
+  height: 100%;
   color: antiquewhite;
   border-radius: 5px; }
 
@@ -101,15 +94,13 @@ button button:active {
   /* shrink wrap to image */
   overflow: hidden;
   /* hide the excess */
-  height: fit-content;
+  height: 30%;
   align-items: center;
   justify-content: center; }
   .imgBox img {
     display: block;
     /* no whitespace */
-    transition: .5s ease-in-out;
-    max-width: 500px;
-    max-height: 600px; }
+    transition: .5s ease-in-out; }
   .imgBox:hover img {
     transform: scale(1.2); }
 
@@ -122,6 +113,13 @@ button button:active {
 
 .imgBox:hover img {
   transform: scale(1.2); }
+
+.imagenproducto {
+  width: 100%;
+  height: auto; }
+
+.redletter {
+  color: red; }
 
 footer {
   display: flex;
@@ -151,20 +149,57 @@ footer {
   padding: 0 40px 0 40px; }
 
 form {
-  background-color: whitesmoke;
-  display: block; }
+  background-color: black;
+  display: block;
+  margin: 0; }
 
-.imagenproducto {
+.inputbox {
+  background-color: black;
+  padding: 40px;
+  border: 5px black;
+  color: antiquewhite;
+  border: ridge; }
+
+.wholepage {
+  width: 100%; }
+
+.cajaproducto {
+  background-color: whitesmoke; }
+
+.textoproducto {
+  padding: 10px; }
+
+.productoimg {
   width: 100%;
   height: auto; }
 
-.inputbox {
-  background-color: aliceblue;
-  padding: 40px;
-  border: 5px black; }
+.btn-buy {
+  background-color: black; }
 
-.redletter {
-  color: red; }
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease; }
+
+.btn-wsp:hover {
+  background: #20ba5a; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px; } }
 
 .cajasede1 {
   background: linear-gradient(#e5ff00, black);

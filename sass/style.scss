@@ -105,35 +105,26 @@ button {
     background-color: $darkbackgrounds;
     margin-top: 10px;
     width: auto;
-    height: 50px;
+    height: 100%;
     color: antiquewhite;
     border-radius: 5px;
 }
-.producto__ventana2 {
-    background-color: $darkbackgrounds;
-    margin-top: 10px;
-    width: 40rem;
-    color: antiquewhite;
-    border-radius: 5px;
-}
-
 .imgBox { /* now a container for the image */
     display: inline-block; /* shrink wrap to image */
     overflow: hidden; /* hide the excess */
-    height: fit-content;
+    height: 30%;
     align-items: center;
     justify-content: center;
     img {
         display: block; /* no whitespace */
         transition: .5s ease-in-out;
-        max-width: 500px;
-        max-height: 600px;
+        // max-width: 500px;
+        // max-height: 600px;
     }
     &:hover img{
         transform: scale(1.2);
     }
   }
-
 
 .imgBox img {
     display: block; /* no whitespace */
@@ -145,6 +136,17 @@ button {
 .imgBox:hover img {
     transform: scale(1.2);
   }
+
+   //  INDEX
+.imagenproducto {
+    width: 100%;
+    height: auto;
+}
+
+.redletter {
+    color: red;
+}
+
 footer {
     display: flex;
     background-color: $darkbackgrounds;
@@ -175,26 +177,71 @@ footer {
     margin:  10px 0 200px 0px;
     padding: 0 40px 0 40px;
 }
+
+    //  PAGINA CONTACTO
 form {
-    background-color: whitesmoke;
+    background-color: black;
     display: block;
+    margin:  0;
+}
+.inputbox {
+    background-color: black;
+    padding: 40px;
+    border: 5px black;
+    color: antiquewhite;
+    border: ridge;
+}
+     // PRODUCTOS
+
+.wholepage {
+    width: 100%;
 }
 
-.imagenproducto {
+.cajaproducto {
+    background-color: whitesmoke;
+}
+
+.textoproducto{
+    padding: 10px;
+}
+
+.productoimg {
     width: 100%;
     height: auto;
 }
+.btn-buy{
+    background-color: black;
+}
+//   buton wpp 
 
-.inputbox {
-    background-color: aliceblue;
-    padding: 40px;
-    border: 5px black;
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
 }
 
-.redletter {
-    color: red;
-}
-
+//  MEDIAQUERIES
 @mixin contenedor-copado ($color1, $color2) {
     background: linear-gradient($color1, $color2);
     display: block;
