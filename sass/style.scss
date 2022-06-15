@@ -183,11 +183,34 @@ footer {
     width: fit-content;
     height: fit-content;
 }
+// sobre nosotros
+.bodycajatexto{
+    background-color: #ffffff;
+    padding: 5rem;
+    margin: auto;
+}
+
+.contenidosn {
+    background-color: rgb(247, 244, 244);
+    height: fit-content;
+}
+
+// .imgcar {
+//     padding: 10px;
+// }
+.carouselimg {
+    max-width: 564px;
+}
     //  PAGINA CONTACTO
 form {
     background-color: black;
     display: block;
     margin:  0;
+}
+h1 {
+    label{
+        margin: 10px;
+    }
 }
 .inputbox {
     background-color: black;
@@ -195,11 +218,13 @@ form {
     border: 5px black;
     color: antiquewhite;
     border: ridge;
+    padding-top: 10px;
 }
      // PRODUCTOS
 
 .wholepage {
     width: 100%;
+    margin: auto;
 }
 
 .cajaproducto {

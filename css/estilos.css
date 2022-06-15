@@ -154,20 +154,37 @@ footer {
   width: fit-content;
   height: fit-content; }
 
+.bodycajatexto {
+  background-color: #ffffff;
+  padding: 5rem;
+  margin: auto; }
+
+.contenidosn {
+  background-color: #f7f4f4;
+  height: fit-content; }
+
+.carouselimg {
+  max-width: 564px; }
+
 form {
   background-color: black;
   display: block;
   margin: 0; }
+
+h1 label {
+  margin: 10px; }
 
 .inputbox {
   background-color: black;
   padding: 40px;
   border: 5px black;
   color: antiquewhite;
-  border: ridge; }
+  border: ridge;
+  padding-top: 10px; }
 
 .wholepage {
-  width: 100%; }
+  width: 100%;
+  margin: auto; }
 
 .cajaproducto {
   background-color: whitesmoke;
