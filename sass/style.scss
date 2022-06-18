@@ -194,7 +194,11 @@ footer {
     background-color: rgb(247, 244, 244);
     height: fit-content;
 }
-
+.inputbox {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
 // .imgcar {
 //     padding: 10px;
 // }

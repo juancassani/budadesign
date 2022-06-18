@@ -163,6 +163,11 @@ footer {
   background-color: #f7f4f4;
   height: fit-content; }
 
+.inputbox {
+  display: block;
+  justify-content: center;
+  align-items: center; }
+
 .carouselimg {
   max-width: 564px; }
 
